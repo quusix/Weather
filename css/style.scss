@@ -20,13 +20,16 @@ body {
 
 .main__conteiner {
 	width: 796px;
-	height: 954px;
+	height: 945px;
 	position: absolute;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 	.search__input {
-		padding-top: 50px;
+		padding-top: 40px;
 		.search__input-block {
 			width: 525px;
 			height: 81px;
@@ -63,7 +66,7 @@ body {
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 		border-radius: 24px;
 		display: flex;
-		align-items: end;
+		align-items: flex-end;
 		.current__weather-img {
 			z-index: -1;
 		}
@@ -91,5 +94,92 @@ body {
 	.current__weather-text-block {
 		width: 100%;
 		padding: 10px;
+	}
+}
+.about__info {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	background: rgba(255, 255, 255, 0.05);
+	border: 2px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+
+	.down-cart-item {
+		color: white;
+		font-size: 24px;
+		h2 {
+			padding-top: 5px;
+			font-family: 'Bubblegum Sans';
+		}
+		h3 {
+			font-family: 'Inria Sans';
+			font-size: 30px;
+		}
+		img {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+	.wind {
+		h3 {
+			position: absolute;
+			right: 0;
+			left: 0;
+			margin: 0 auto;
+			top: 48%;
+			color: white;
+			font-size: 24px;
+		}
+		h2 {
+			padding-top: 5px;
+			padding-bottom: 10px;
+			font-family: 'Bubblegum Sans';
+			color: white;
+			font-size: 24px;
+		}
+	}
+	.humidity {
+		h3 {
+			font-size: 24px;
+			color: white;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			left: 0;
+			margin: 0 auto;
+		}
+		h2 {
+			font-size: 24px;
+			color: white;
+			padding-top: 5px;
+			font-family: 'Bubblegum Sans';
+		}
+	}
+}
+.about__info-block {
+	margin: 22px;
+	width: 207px;
+	height: 190px;
+	background: rgba(255, 255, 255, 0.05);
+	border: 2px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	text-align: center;
+	position: relative;
+
+	.down-cart-item {
+		font-size: 100px;
+	}
+	.about__info-wind {
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+	.about__info-humidity {
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 20%;
 	}
 }
